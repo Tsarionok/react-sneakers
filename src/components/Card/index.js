@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
-function Card({title, price, imageUrl, addToCart, removeFromCart}) {
+function Card({id, title, price, imageUrl, addToCart, removeFromCart}) {
   const [isChecked, setState] = React.useState(false);
 
   const changeChecked = () => {
     if (!isChecked) {
-      addToCart({title, imageUrl, price })
+      addToCart({id, title, imageUrl, price })
     } else {
-      removeFromCart(title)
+      removeFromCart(id)
     }
     setState(!isChecked)
   }

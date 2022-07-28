@@ -5,7 +5,7 @@ function Header(props) {
         <img width={40} height={40} src="/img/logo.png" alt="Logo" />
         <div>
           <h3 className="text-uppercase">React Sneakers</h3>
-          <p className="opacity-5">Магазин пацанских кроссовок</p>
+          <p className="opacity-5">Магазин крутейших кроссовок</p>
         </div>
       </div>
       <ul className="d-flex">
