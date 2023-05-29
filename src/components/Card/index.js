@@ -22,7 +22,12 @@ function Card({id, title, price, imageUrl, addToCart, removeFromCart}) {
       <h5>{title}</h5>
       <div className="d-flex justify-between align-center">
         <div className="d-flex flex-column">
-          <span>Цена:</span>
+          <div>
+            <div>
+              <span className={`${styles.sale} mr-10`}>Sale</span>
+            </div>
+            <span>Price:</span>
+          </div>
           <b>{price} руб.</b>
         </div>
         <img onClick={changeChecked} className="cu-p" src={isChecked ? "/img/add-checked.svg" : "/img/add-unchecked.svg"} alt="Plus" />
